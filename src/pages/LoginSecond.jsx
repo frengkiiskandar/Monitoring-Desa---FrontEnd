@@ -1,5 +1,7 @@
 import { Divider } from '@mui/material'
-import React from 'react'
+import metronic from '../assets/metronix.png'
+import bg from '../assets/background.jpg'
+import mainImage from '../assets/image.png'
 
 const LoginSecond = () => {
 return (
@@ -9,7 +11,7 @@ return (
             <div className='px-[12%] w-[50%] flex flex-col justify-center items-center'>
                 <div className=' flex flex-col justify-center items-center gap-8 bg-white '>
                     <div className='text-center'>
-                        <h2 className='text-2xl font-bold mb-2'>Sign In</h2>
+                        <h2 className='text-2xl font-bold mb-3'>Sign In</h2>
                         <p className='text-gray-400 font-semibold'>Your Social Campaign</p>
                     </div>
 
@@ -40,27 +42,27 @@ return (
 
                     {/* <p className='text-gray-500'>Or with email</p> */}
                     <div className=' w-full'>
-                        <Divider >Or with email</Divider> 
+                        <Divider sx={{color :'gray'}}>Or with email</Divider> 
                     </div>
 
-                    <div className='p-5 rounded-md bg-purple-50 text-purple-500'>
-                        <p>Use account <span className='font-bold text-purple-700'>admin@demo.com</span> and password <span className='font-bold text-purple-700'>demo</span> to continue</p>
+                    <div className='w-full px-7 py-5 text-wrap rounded-md bg-violet-50 text-violet-500 '>
+                        <p>Use account <span className='font-bold text-purple-700'>admin@demo.com</span> and password <span className='font-bold text-purple-700'>demo</span> to <br /> continue . </p>
                     </div>
 
                     <div className='w-full flex flex-col justify-center items-center gap-5'>
                         <div className='w-full flex flex-col justify-start items-start gap-2'>
-                            <label>Email</label>
+                            <label className='font-medium'>Email</label>
                             <input type="text" className='w-full border rounded-md px-3 py-3 outline-none' placeholder='admin@gmail.com'/>
                         </div>
                         <div className='w-full flex flex-col justify-start items-start gap-2 mb-3'>
-                            <label>Password</label>
+                            <label className='font-medium'>Password</label>
                             <input type="password" className='w-full border rounded-md px-3 py-3 outline-none' placeholder='password'/>
                             <p className='w-full flex justify-end text-right text-blue-500 cursor-pointer font-medium'>Forgot Password ?</p>
                         </div>
 
                         <button className='w-full py-3 rounded-md text-white bg-blue-500 font-medium '>Continue</button>
 
-                        <p className='text-gray-500'>Not a Member yet ? <spa className='cursor-pointer text-blue-500'>Sign Up</spa></p>
+                        <p className='text-gray-400 font-medium'>Not a Member yet ? <spa className='cursor-pointer text-blue-500'>Sign Up</spa></p>
 
                         <div className='flex justify-center items-center gap-10 text-blue-500 absolute bottom-8'>
                             <p>Terms</p>
@@ -73,9 +75,19 @@ return (
 
 
             {/* kanan */}
-            <div className=' flex flex-grow justify-center items-center gap-20 bg-blue-700 '>
-                <div>
-                <h1>Metronic</h1>
+            <div className='flex flex-grow flex-col justify-center items-center gap-10 bg-blue-600 text-white text-center' style={{backgroundImage: `url(${bg})`, backgroundPosition:'center', backgroundSize:'cover' }}>
+                <div >
+                    <img src={metronic} alt=""  className='w-32'/>
+                </div>
+
+                <div className='w-[40rem]'>
+                    <img src={mainImage} alt=""/>
+                </div>
+                <div className='w-[30rem] '>
+                    <h1 className='text-3xl font-bold  mb-6'>Fast, Efficient and Productive</h1>
+                    <p>In this kind of post, the bloggerintroduces a person they’ve interviewed
+                        and provides some background information aboutthe intervieweeand their
+                        work following this is a transcript of the interview.</p>
                 </div>
             </div>
         </div>
