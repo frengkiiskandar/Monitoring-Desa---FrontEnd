@@ -6,12 +6,12 @@ import mainImage from '../assets/image.png'
 const LoginSecond = () => {
 return (
     <>
-        <div className='box-border flex w-full min-h-[100vh] text-sm'>
+        <div className='box-border flex flex-wrap flex-col-reverse md:flex-row w-full min-h-[100vh] text-xs md:text-sm'>
             {/* kiri */}
-            <div className='px-[12%] w-[50%] flex flex-col justify-center items-center'>
+            <div className='px-[12%] py-16 w-full md:w-[50%] flex flex-col justify-center items-center relative'>
                 <div className=' flex flex-col justify-center items-center gap-8 bg-white '>
                     <div className='text-center'>
-                        <h2 className='text-2xl font-bold mb-3'>Sign In</h2>
+                        <h2 className='text-3xl font-bold mb-3'>Sign In</h2>
                         <p className='text-gray-400 font-semibold'>Your Social Campaign</p>
                     </div>
 
@@ -41,7 +41,7 @@ return (
                     </div>
 
                     {/* <p className='text-gray-500'>Or with email</p> */}
-                    <div className=' w-full'>
+                    <div className=' w-full hidden md:block'>
                         <Divider sx={{color :'gray'}}>Or with email</Divider> 
                     </div>
 
@@ -49,7 +49,7 @@ return (
                         <p>Use account <span className='font-bold text-purple-700'>admin@demo.com</span> and password <span className='font-bold text-purple-700'>demo</span> to <br /> continue . </p>
                     </div>
 
-                    <div className='w-full flex flex-col justify-center items-center gap-5'>
+                    <div className='w-full flex flex-col justify-center items-center gap-5 '>
                         <div className='w-full flex flex-col justify-start items-start gap-2'>
                             <label className='font-medium'>Email</label>
                             <input type="text" className='w-full border rounded-md px-3 py-3 outline-none' placeholder='admin@gmail.com'/>
@@ -64,7 +64,7 @@ return (
 
                         <p className='text-gray-400 font-medium'>Not a Member yet ? <spa className='cursor-pointer text-blue-500'>Sign Up</spa></p>
 
-                        <div className='flex justify-center items-center gap-10 text-blue-500 absolute bottom-8'>
+                        <div className='flex justify-center items-center gap-10 text-blue-500 md:absolute bottom-8'>
                             <p>Terms</p>
                             <p>Plans</p>
                             <p>Contact Us</p>
@@ -75,18 +75,18 @@ return (
 
 
             {/* kanan */}
-            <div className='flex flex-grow flex-col justify-center items-center gap-10 bg-blue-600 text-white text-center' style={{backgroundImage: `url(${bg})`, backgroundPosition:'center', backgroundSize:'cover' }}>
+            <div className='p-10 flex flex-grow flex-col justify-center items-center gap-10 bg-blue-600 text-white text-center' style={{backgroundImage: `url(${bg})`, backgroundPosition:'center', backgroundSize:'cover' }}>
                 <div >
                     <img src={metronic} alt=""  className='w-32'/>
                 </div>
 
-                <div className='w-[40rem]'>
+                <div className='w-[22rem] md:w-[40rem]'>
                     <img src={mainImage} alt=""/>
                 </div>
                 <div className='w-[30rem] '>
-                    <h1 className='text-3xl font-bold  mb-6'>Fast, Efficient and Productive</h1>
-                    <p>In this kind of post, the bloggerintroduces a person they’ve interviewed
-                        and provides some background information aboutthe intervieweeand their
+                    <h1 className='text-2xl md:text-3xl font-bold mb-6'>Fast, Efficient and Productive</h1>
+                    <p className='font-semibold'>In this kind of post, <span className='font-bold text-amber-400'>the blogger</span> introduces a person they've interviewed
+                        and provides some background information about <span className='font-bold text-amber-400'>the interviewee </span> and their
                         work following this is a transcript of the interview.</p>
                 </div>
             </div>
