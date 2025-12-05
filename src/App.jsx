@@ -21,6 +21,7 @@ import AdminLaporan from "./pages/AdminLaporan";
 import LaporanDikirim from "./pages/LaporanDikirim";
 import ProfileSetting from "./pages/ProfileSetting";
 import EditProgram from "./pages/EditProgram";
+import LoginSecond from './pages/LoginSecond';
 
 const App = () => {
    const theme = createTheme({
@@ -36,7 +37,7 @@ const App = () => {
       <ThemeProvider theme={theme}>
          <BrowserRouter>
             <Routes>
-               <Route path="/" element={<Login />} />
+               <Route path="/" element={<LoginSecond />} />
                <Route element={<Frame />}>
                   <Route path="/beranda" element={<Home />} />
                   <Route path="/desa" element={<Desa />} />
