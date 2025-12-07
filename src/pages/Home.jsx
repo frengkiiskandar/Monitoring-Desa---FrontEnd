@@ -96,7 +96,6 @@ const Home = () => {
                   </div>
                </div>
                {/* 1 */}
-               <Link to={"/admin/persetujuan"}>
                   <div className="p-5 shadow-md border border-gray-300 rounded-lg w-80">
                      <div className="flex flex-col justify-start items-start gap-5">
                         <div className="p-5 rounded-md bg-orange-50">
@@ -108,7 +107,6 @@ const Home = () => {
                         </p>
                      </div>
                   </div>
-               </Link>
 
                {/* 1 */}
                <div className="p-5 shadow-md border border-gray-300 rounded-lg w-80">

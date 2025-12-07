@@ -8,8 +8,8 @@ return (
     <>
         <div className='box-border flex flex-wrap flex-col-reverse md:flex-row w-full min-h-[100vh] text-xs md:text-sm'>
             {/* kiri */}
-            <div className='px-10 py-16 w-full md:w-[50%] flex flex-col justify-center items-center relative'>
-                <div className=' flex flex-col justify-center items-center gap-8 bg-white '>
+            <div className='px-10 py-16 w-full md:w-[50%] flex flex-col justify-center items-center relative '>
+                <div className=' flex flex-col justify-center items-center gap-8 bg-white'>
                     <div className='text-center'>
                         <h2 className='text-3xl font-bold mb-3'>Sign In</h2>
                         <p className='text-gray-400 font-semibold'>Your Social Campaign</p>
@@ -45,8 +45,8 @@ return (
                         <Divider sx={{color :'gray'}}>Or with email</Divider> 
                     </div>
 
-                    <div className='w-full px-7 py-5 text-wrap rounded-md bg-violet-50 text-violet-500 '>
-                        <p>Use account <span className='font-bold text-purple-700'>admin@demo.com</span> and password <span className='font-bold text-purple-700'>demo</span> to <br /> continue . </p>
+                    <div className='min-w-full px-7 py-5 text-wrap rounded-md bg-violet-50 text-violet-500 '>
+                        <p>Use account <span className='font-bold text-purple-700'>admin@demo.com</span> and password <span className='font-bold text-purple-700'>demo</span> to continue . </p>
                     </div>
 
                     <div className='w-full flex flex-col justify-center items-center gap-5 '>
@@ -81,10 +81,10 @@ return (
                     <img src={metronic} alt=""  className='w-32'/>
                 </div>
 
-                <div className='w-[20rem] md:max-w-[40rem] '>
+                <div className='w-[20rem] md:max-w-[40rem] lg:w-[45rem] '>
                     <img src={mainImage} alt=""/>
                 </div>
-                <div className='w-[25rem] md:w-[30rem] p-5'>
+                <div className='w-[25rem] md:w-[30rem] lg:w-[40rem] p-5'>
                     <h1 className='text-2xl md:text-3xl font-bold mb-6'>Fast, Efficient and Productive</h1>
                     <p className='font-semibold'>In this kind of post, <span className='font-bold text-amber-400'>the blogger</span> introduces a person they've interviewed
                         and provides some background information about <span className='font-bold text-amber-400'>the interviewee </span> and their

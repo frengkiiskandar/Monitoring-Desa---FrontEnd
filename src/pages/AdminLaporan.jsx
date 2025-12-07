@@ -102,7 +102,7 @@ const AdminLaporan = () => {
                <div className="border shadow-md rounded-md p-10 flex justify-between items-center gap-28">
                   <div className="flex flex-col justify-start items-start gap-2">
                      <h1 className="font-semibold text-gray-700">
-                        Laporan Berita Acara Monitoring
+                        Laporan Ba Monev
                      </h1>
                      <p className="text-2xl font-semibold">{monev} </p>
                   </div>
@@ -113,7 +113,7 @@ const AdminLaporan = () => {
                <div className="border shadow-md rounded-md p-10 flex justify-between items-center gap-28">
                   <div className="flex flex-col justify-start items-start gap-2">
                      <h1 className="font-semibold text-gray-700">
-                        Total laporan
+                        laporan Hasil
                      </h1>
                      <p className="text-2xl font-semibold">{lhp} </p>
                   </div>
@@ -121,7 +121,7 @@ const AdminLaporan = () => {
                      <TextSnippetIcon sx={{ color: "blue" }} />
                   </div>
                </div>
-               <div className="border shadow-md rounded-md p-10 flex justify-between items-center gap-28">
+               {/* <div className="border shadow-md rounded-md p-10 flex justify-between items-center gap-28">
                   <div className="flex flex-col justify-start items-start gap-2">
                      <h1 className="font-semibold text-gray-700">
                         Total laporan
@@ -131,7 +131,7 @@ const AdminLaporan = () => {
                   <div className="bg-blue-50 p-5 rounded-lg">
                      <TextSnippetIcon sx={{ color: "blue" }} />
                   </div>
-               </div>
+               </div> */}
             </div>
 
             {/* ======= data grid ====== */}
